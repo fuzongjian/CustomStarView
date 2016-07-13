@@ -19,17 +19,10 @@
     [super viewDidLoad];
     
 //    
-//    StarsView * starsView = [[StarsView alloc] initWithFrame:CGRectMake(20, 200, 280, 50) starNumber:5 starWidth:50 starNormalColor:[UIColor grayColor] starLightColor:[UIColor redColor]];
-//    
-//    starsView.delegate = self;
-//    [self.view addSubview:starsView];
+    StarsView * starsView = [[StarsView alloc] initWithFrame:CGRectMake(20, 200, 280, 50) starNumber:5 starWidth:50 starNormalColor:[UIColor grayColor] starLightColor:[UIColor redColor]];
     
-    DrawStar * star = [[DrawStar alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
-    [star drawStarWidth:50 height:50];
-    star.starColor = [UIColor grayColor];
-    
-    [self.view addSubview:star];
-    
+    starsView.delegate = self;
+    [self.view addSubview:starsView];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
